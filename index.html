@@ -42,3 +42,44 @@
 *   **[유튜브 앱 실행](intent://www.youtube.com/#Intent;scheme=https;package=com.google.android.youtube;end)**
 *   **[구글 검색 앱](intent:#Intent;action=com.google.android.googlequicksearchbox.GOOGLE_SEARCH;end)**
 *   **[구글 지도 실행](intent:#Intent;action=android.intent.action.VIEW;data=https://www.google.com/maps;end)**
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum 3 FRP Bypass Tools</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; background-color: #f4f4f4; }
+        .btn { 
+            display: block; width: 80%; max-width: 300px; margin: 15px auto; 
+            padding: 15px; background: #007bff; color: white; 
+            text-decoration: none; border-radius: 8px; font-weight: bold; border: none; cursor: pointer;
+        }
+        .btn:active { background: #0056b3; }
+        .info { font-size: 12px; color: #666; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <h2>Quantum 3 FRP Bypass</h2>
+
+    <!-- 갤럭시 스토어 진입 (추천) -->
+    <button class="btn" onclick="location.href='intent:#Intent;action=android.intent.action.VIEW;data=samsungapps://MainPage;end'">Open Galaxy Store</button>
+
+    <!-- 설정 직접 진입 -->
+    <button class="btn" onclick="location.href='intent:#Intent;action=android.settings.SETTINGS;end'">Open Settings</button>
+    <button class="btn" onclick="location.href='intent:#Intent;action=android.settings.APPLICATION_SETTINGS;end'">Open App Manager</button>
+    <button class="btn" onclick="location.href='intent:#Intent;action=android.settings.SET_SETTING_PASSWORD;end'">Set Password/Pattern</button>
+
+    <!-- 외부 앱 진입 -->
+    <button class="btn" onclick="location.href='intent://www.youtube.com/#Intent;scheme=https;package=com.google.android.youtube;end'">Open YouTube</button>
+    <button class="btn" onclick="location.href='intent:#Intent;action=android.intent.action.VIEW;data=https://www.google.com/maps;end'">Open Google Maps</button>
+    
+    <div class="info">
+        클릭 시 반응이 없거나 ERR_UNKNOWN_URL_SCHEME 오류가 뜨면,<br>
+        삼성 인터넷 브라우저에서 다시 접속하세요.
+    </div>
+
+</body>
+</html>
